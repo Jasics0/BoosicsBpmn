@@ -19,6 +19,7 @@ public class User {
     private String name;
     private String email;
     private String password;
+    @Column(name = "active_account",columnDefinition = "boolean default false")
     private boolean activeAccount;
     private int confirmationCode;
 

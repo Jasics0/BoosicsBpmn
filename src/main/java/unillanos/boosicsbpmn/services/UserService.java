@@ -84,6 +84,9 @@ public class UserService implements IUserService {
     public String activateAccount(int code) throws CamundaSpringBootDomainException {
         try {
             User user = userRepository.findUserByConfirmationCode(code);
+            if (user == null) {
+                return "User not found!";
+            }
             user.setActiveAccount(true);
             user.setConfirmationCode(0);
             userRepository.save(user);
