@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="elegirCancion" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.12.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <decision id="song" name="Elegir canción">
+    <decisionTable id="DecisionTable_07h7utz">
+      <input id="Input_1" label="Capitulo" camunda:inputVariable="capitulo">
+        <inputExpression id="InputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="cancion" typeRef="string" />
+      <rule id="DecisionRule_01h2zn8">
+        <inputEntry id="UnaryTests_1vxhnfu">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sqa97t">
+          <text>"romance"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1dzs78e">
+        <inputEntry id="UnaryTests_08v5njj">
+          <text>2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06oxc33">
+          <text>"aventura"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pm19jf">
+        <inputEntry id="UnaryTests_1wc5v7u">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04s1xl2">
+          <text>"drama"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1u74jbl">
+        <inputEntry id="UnaryTests_1gbypeb">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xnhs1c">
+          <text>"terror"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0koe2lt">
+        <inputEntry id="UnaryTests_1h0am65">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_181lmrq">
+          <text>"acción"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1metkfp">
+        <inputEntry id="UnaryTests_0p9c096">
+          <text>&gt;5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ryn42d">
+          <text>"no hay música"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05w7sks">
+        <inputEntry id="UnaryTests_1ybfh2k">
+          <text>&lt;1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03zfkrd">
+          <text>"no hay música"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="song">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

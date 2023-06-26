@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="bookAvailable" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.12.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <decision id="disponibilidadLibro" name="Disponibilidad libro">
+    <decisionTable id="DecisionTable_16gkvsv">
+      <input id="Input_1" label="Nombre libro" camunda:inputVariable="book">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="Disponible" typeRef="boolean" />
+      <rule id="DecisionRule_0psizrl">
+        <inputEntry id="UnaryTests_10vv7fd">
+          <text>"Harry Potter"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1aoep1e">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_065o54t">
+        <inputEntry id="UnaryTests_0pzj6fb">
+          <text>"Narnia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_176hxqh">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tahksj">
+        <inputEntry id="UnaryTests_0ay93r4">
+          <text>"El pérfume"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0os3qq4">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vrixw7">
+        <inputEntry id="UnaryTests_0n5ovqd">
+          <text>"Las mil y una noches"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fm4etm">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fdj140">
+        <inputEntry id="UnaryTests_1kq4zj9">
+          <text>"El señor de los anillos"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0q88u47">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0glmgu6">
+        <inputEntry id="UnaryTests_1yti9ca">
+          <text>"El hobbit"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1irug5p">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w9nrdw">
+        <inputEntry id="UnaryTests_10gx3xk">
+          <text>"Crimen y castigo"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qvjusg">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="disponibilidadLibro">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
