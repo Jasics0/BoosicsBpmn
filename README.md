@@ -34,7 +34,6 @@ http://localhost:8090
 The user interface provides the following functionalities:
 
 - User Registration: Fill out the registration form with the required information and click "Register" to create a new user account.
-- Email Sending: Log in with your user credentials and access the email sending form. Fill in the necessary fields (recipient, subject, content) and click "Send" to send the email.
 
 ## Contributions
 
