@@ -16,12 +16,12 @@ Follow these steps to set up and run BoosicsBpmn:
 
 1. Clone the BoosicsBpmn repository:
 
-git clone https://github.com/your-username/boosics-bpmn.git](https://github.com/Jasics0/BoosicsBpmn
+git clone https://github.com/Jasics0/BoosicsBpmn
 
 
 2. Navigate to the project directory:
 
-cd boosics-bpmn
+cd BoosicsBpmn
 
 
 ## Usage
