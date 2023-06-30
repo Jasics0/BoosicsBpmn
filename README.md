@@ -52,7 +52,7 @@ Follow these steps to set up and run BoosicsBpmn:
 
 ![image](https://github.com/Jasics0/BoosicsBpmn/assets/61464947/7c9a05bb-d4a4-44f3-a558-db3c1e5f343c)
 
--You can also change the host and smtp port in the application.properties
+- You can also change the host and smtp port in the application.properties
 
 ## Usage
 
